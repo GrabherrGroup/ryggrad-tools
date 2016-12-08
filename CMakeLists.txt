@@ -18,11 +18,14 @@ set(SOURCE_FILES_SPLITFASTA  ryggrad/src/base/FileParser.cc ryggrad/src/general/
 
 set(SOURCE_FILES_FASTABYLENGTH  ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/util/mutil.cc src/sequence/FastaByLength.cc) 
 
+set(SOURCE_FILES_SEQBYSOMTRAINER  ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/util/mutil.cc src/analysis/SeqBySOMTrainer.cc ryggrad/src/ml/NNIO.cc ryggrad/src/ml/NNet.cc) 
+
 add_executable(TranscriptomeFromVaryK ${SOURCE_FILES_TRANSCRIPTOMEFROMVARYK})
 add_executable(FindORFs ${SOURCE_FILES_FINDORFS})
 add_executable(NucToProt ${SOURCE_FILES_NUCTOPROT})
 add_executable(SplitFasta ${SOURCE_FILES_SPLITFASTA})
 add_executable(FastaByLength ${SOURCE_FILES_FASTABYLENGTH})
+add_executable(SeqBySOMTrainer ${SOURCE_FILES_SEQBYSOMTRAINER})
 
 
 # ryggrad-tools binaries
