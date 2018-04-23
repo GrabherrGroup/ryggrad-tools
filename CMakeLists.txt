@@ -20,6 +20,7 @@ set(SOURCE_FILES_SEQBYSOMTRAINER  ryggrad/src/base/FileParser.cc ryggrad/src/gen
 set(SOURCE_FILES_SIMULATEPEREADS  ryggrad/src/base/FileParser.cc ryggrad/src/base/StringUtil.cc ryggrad/src/general/DNAVector.cc ryggrad/src/general/ReadSimulator.cc ryggrad/src/util/mutil.cc src/sequence/SimulatePEReads.cc) 
 
 set(SOURCE_FILES_SPLITFASTA  ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/util/mutil.cc src/sequence/SplitFasta.cc) 
+set(SOURCE_FILES_FASTAFROMFASTQ ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/util/mutil.cc src/sequence/FastaFromFastq.cc) 
 
 set(SOURCE_FILES_TRANSCRIPTOMEFROMVARYK   ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/aligns/KmerAlignCore.cc ryggrad/src/util/mutil.cc src/kmers/KmerTable.cc src/kmers/NonRedKmerTable.cc src/kmers/TranscriptomeFromVaryK.cc) 
 
@@ -31,6 +32,7 @@ add_executable(NucToProt ${SOURCE_FILES_NUCTOPROT})
 add_executable(SeqBySOMTrainer ${SOURCE_FILES_SEQBYSOMTRAINER})
 add_executable(SimulatePEReads ${SOURCE_FILES_SIMULATEPEREADS})
 add_executable(SplitFasta ${SOURCE_FILES_SPLITFASTA})
+add_executable(FastaFromFastq ${SOURCE_FILES_FASTAFROMFASTQ})
 add_executable(TranscriptomeFromVaryK ${SOURCE_FILES_TRANSCRIPTOMEFROMVARYK})
 
 
